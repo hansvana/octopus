@@ -4,5 +4,29 @@ $primary-color: #fff;
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  background-color: #BADA55;
+  background-color: #333;
+  text-align: center;
+}
+
+@keyframes pupil {
+    0%   {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%   {
+      transform: translate(3px, 5px) rotate(10deg);
+    }
+    50%   {
+      transform: translate(-5px, -5px) rotate(-15deg);
+    }
+    75%   {
+      transform: translate(5px, 0px) rotate(0deg);
+    }
+    100%   {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+.octopupil {
+  transform-origin: center center;
+  animation: pupil  10s infinite;
 }
